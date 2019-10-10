@@ -1,6 +1,6 @@
 {
   "name": "@graphql-codegen/cli",
-  "version": "1.8.0",
+  "version": "1.9.1",
   "license": "MIT",
   "bin": {
     "gql-gen": "dist/commonjs/bin.js",
@@ -58,10 +58,10 @@
     "debounce": "1.2.0",
     "detect-indent": "6.0.0",
     "glob": "7.1.4",
-    "graphql-config": "2.2.1",
+    "graphql-config": "3.0.0-alpha.0",
     "graphql-import": "0.7.1",
     "graphql-tag-pluck": "0.8.5",
-    "graphql-toolkit": "0.5.16",
+    "graphql-toolkit": "0.6.0-alpha.0",
     "graphql-tools": "4.0.5",
     "indent-string": "4.0.0",
     "inquirer": "7.0.0",

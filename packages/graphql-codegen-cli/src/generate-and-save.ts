@@ -7,13 +7,16 @@ import { sync as mkdirpSync } from 'mkdirp';
 import { dirname } from 'path';
 import { debugLog } from './utils/debugging';
 import { createHash } from 'crypto';
+import { CodegenContext, ensureContext } from './config';
 
 const hash = (content: string): string =>
   createHash('sha1')
     .update(content)
     .digest('base64');
 
-export async function generate(config: Types.Config, saveToFile = true): Promise<Types.FileOutput[] | any> {
+export async function generate(input: CodegenContext | Types.Config, saveToFile = true): Promise<Types.FileOutput[] | any> {
+  const context = ensureContext(input);
+  const config = context.getConfig();
   await lifecycleHooks(config.hooks).afterStart();
   let recentOutputHash = new Map<string, string>();
 
@@ -68,10 +71,10 @@ export async function generate(config: Types.Config, saveToFile = true): Promise
 
   // watch mode
   if (config.watch) {
-    return createWatcher(config, writeOutput);
+    return createWatcher(context, writeOutput);
   }
 
-  const outputFiles = await executeCodegen(config);
+  const outputFiles = await executeCodegen(context);
 
   await writeOutput(outputFiles);
 
