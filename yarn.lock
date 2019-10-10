@@ -8288,10 +8288,10 @@ graphql-config@2.2.1:
     lodash "^4.17.4"
     minimatch "^3.0.4"
 
-graphql-config@3.0.0-alpha.0:
-  version "3.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/graphql-config/-/graphql-config-3.0.0-alpha.0.tgz#b2bf8c93e3fe2716b864cc0f77b702ce4cbae028"
-  integrity sha512-CdSAJMwXP51dPfGQjRxqW4WBNF4QI/m1ATlcI7c6rpK7ePlbc5vBrx1OByP1e1tHLsLEM8IclnMrLx66oO8w+Q==
+graphql-config@3.0.0-alpha.3:
+  version "3.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/graphql-config/-/graphql-config-3.0.0-alpha.3.tgz#a879caacb9f464f2f66d5906047fe2f613cf6b38"
+  integrity sha512-pu33hNTv+hEhAQI9AATMqWnMJvplX7DpdnUADNEMr13O+eVP9uEz2GAY8XwHxH2W5PDUqSP5fcjozm+7iFm2NQ==
   dependencies:
     cosmiconfig "5.2.1"
     globby "10.0.1"
@@ -8367,10 +8367,10 @@ graphql-toolkit@0.5.16:
     tslib "^1.9.3"
     valid-url "1.0.9"
 
-graphql-toolkit@0.6.0-alpha.0:
-  version "0.6.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/graphql-toolkit/-/graphql-toolkit-0.6.0-alpha.0.tgz#6f6d4fe0c308b0275a242d735cf5eed497dbe092"
-  integrity sha512-79GFGNTwdyNcIMsBfkWgzCuTQIXoTMfGwqoO5piBBY1JCBkZ2Xn0vJtj9qGqzr+CSjYKaO/DUwjfFVCtppX2VA==
+graphql-toolkit@0.6.0-alpha.3:
+  version "0.6.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/graphql-toolkit/-/graphql-toolkit-0.6.0-alpha.3.tgz#235485dd65ea1a22ac1cdfa802c9a34bdb6b6f94"
+  integrity sha512-aL9tExSqXP6D9by53pwXHTQ/ZJMPWXXKr5efl+rBjBrkzLajPb31Be8w3LwNH9JkYlfhzfGyVPN0CBCcS/y6rA==
   dependencies:
     "@kamilkisiela/graphql-tools" "4.0.6"
     "@types/glob" "7.1.1"
@@ -8379,7 +8379,7 @@ graphql-toolkit@0.6.0-alpha.0:
     cross-fetch "^3.0.4"
     deepmerge "4.1.0"
     globby "10.0.1"
-    graphql-config "3.0.0-alpha.0"
+    graphql-config "3.0.0-alpha.3"
     graphql-import "0.7.1"
     is-glob "4.0.1"
     is-valid-path "0.1.1"

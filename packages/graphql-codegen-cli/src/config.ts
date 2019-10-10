@@ -185,7 +185,7 @@ export class CodegenContext {
   private _config: Types.Config;
   private _graphqlConfig?: GraphQLConfig;
   private config: Types.Config;
-  private _project: string;
+  private _project?: string;
   filepath: string;
 
   constructor({ config, graphqlConfig, filepath }: { config?: Types.Config; graphqlConfig?: GraphQLConfig; filepath?: string }) {
@@ -195,7 +195,7 @@ export class CodegenContext {
   }
 
   useProject(name?: string) {
-    this._project = name || 'default';
+    this._project = name;
   }
 
   getConfig(): Types.Config {
