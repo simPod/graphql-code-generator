@@ -1,15 +1,11 @@
 import { loadConfig, GraphQLExtensionDeclaration, GraphQLConfig } from 'graphql-config';
-import { CodeFileLoader, GraphQLFileLoader, JSONFileLoader, UrlLoader } from 'graphql-toolkit';
+import { CodeFileLoader } from '@graphql-toolkit/code-file-loader';
 
 const CodegenExtension: GraphQLExtensionDeclaration = api => {
   // Schema
-  api.loaders.schema.register(CodeFileLoader);
-  api.loaders.schema.register(GraphQLFileLoader);
-  api.loaders.schema.register(JSONFileLoader);
-  api.loaders.schema.register(UrlLoader);
+  api.loaders.schema.register(new CodeFileLoader());
   // Documents
-  api.loaders.documents.register(CodeFileLoader);
-  api.loaders.documents.register(GraphQLFileLoader);
+  api.loaders.documents.register(new CodeFileLoader());
 
   // KAMIL: maybe we should let extensions return an array with schema and document loaders
   // instead of exposing an api for that
